@@ -26,5 +26,5 @@ jobs:
             echo "Deploying to VPS...${{ secrets.DEPLOY_PATH }}"
               scp -P ${{ secrets.SSH_PORT }} \
                 -o StrictHostKeyChecking=no \
-                -r public/* \
+                -r * \
                 ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH}}/
