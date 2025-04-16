@@ -38,13 +38,13 @@ header {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     overflow: hidden;
 }
 
 .header-content {
-    position: relative;
+    position: absolute;
     z-index: 2;
     color: white;
     display: flex;
@@ -53,6 +53,7 @@ header {
     text-align: center;
     width: 100%;
     padding: 2rem 0;
+    border: 1px solid red;
 }
 
 .profile-img {
